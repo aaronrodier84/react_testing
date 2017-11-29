@@ -29,7 +29,6 @@ class Todo extends Component {
 
 	delete(data) {
 		var root = 'https://jsonplaceholder.typicode.com';
-        var that = this;
         const request = fetch(root + '/todos' + '/' + data.id, {
         	method: 'DELETE',
         });
